@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- project dsicription -->
+ <meta name="description" content="A Website Project replicating apple page for user in Canada only for buying iPhones, Apple Watches, and all Apple products">
+ 
+ <!-- Meta keywords-->
+ <meta name="keywords" content="Apple, Replication, Canada, Web Development, Interface-Design">
+ 
+ <!-- compatibility -->
+ <meta name="mobile--ipad-web-app-capable" content="yes">
+
+ <!-- AUTHORS -->
+ <meta name="author" content="Group Project">
+
+ <!-- Favicon -->
+ <link rel="shortcut icon" href="../image_file/icons8-apple-logo-30.png" type="image/x-icon">
+    <!-- stylessheet -->
+ <link rel="stylesheet" href="../css/gbloal.css">
+
+  <!-- jquery to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+<body>
+    <nav class="header_bar">
+        
+        <ul class="global_links" id="globalnav-link">
+           <li><a href="../home.html" rel="noopener noreferrer"><span><svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path></svg></span></a></li> 
+             
+            <!-- <section class="global_links"> -->
+            <span class="globalnav-link">
+                <li> <a href="./home.html">Store</a></li>
+                <li > <a href="./mac.html">Mac</a></li>
+                <li > <a href="./ipad.html">iPad</a></li>
+                <li > <a href="./iphone.html">iPhone</a> </li>
+                <li ><a href="./iwatch.html"> Watch</a></li>
+                <li > <a href="#">Airpods</a></li>
+                <li > <a href="#">TV<span>&</span>Homes</a></li>
+                <li ><a href="./AIRTAGS.html">Accessories</a></li>
+                <li ><a href="./support.html">Support</a></li>
+        </span>
+        <span class="global_icons">
+         <li><a href="./search.html"  rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+            <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
+          </svg></a></li>
+<li><a href="./cart.html" rel="noopener noreferrer"><span class="globalnav-image-regular"><svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+    <path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"></path></svg></span></a></li>
+    <li><a href="./cart.html" target="_blank" rel="noopener noreferrer"><span class="globalnav-image-regular" id="menubar"><svg width="16" height="44" viewBox="0 0 18 18"><polyline id="globalnav-menutrigger-bread-bottom" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12"><animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate><animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate></polyline><polyline id="globalnav-menutrigger-bread-top" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5"><animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"></animate><animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"></animate></polyline></svg></span></a></li>
+</span>    
+        </ul>
+        
+    </nav>
+    <main class="content_container">
+        
+        <div class="watch-header">  <h2 class="watch-header-text"> Shop iPad</h2></div>
+       
+          
+        <section class="image-scroll-section">
+          
+            <ul class="link-scroll-wrapper">
+                
+
+                <li class="wrappers" id="first_item"></li>
+                <li class="wrappers" id=""> <a href="#allmodel">All Models</a></li> 
+              
+                <li class="wrappers" id=""> <a href="http://hello">Shopping guides</a></li>
+                <li class="wrappers" id=""> <a href="http://hello">Ways to Save</a></li>
+                <li class="wrappers" id=""> <a href="http://hello">Carbon Neutral</a></li>
+                <li class="wrappers" id=""> <a href="http://hello">Accessories</a></li>
+                <li class="wrappers" id=""> <a href="http://hello">Setup and Support</a></li>
+                <li class="wrappers" id=""> <a href="http://hello">The Apple Watch Experince</a></li>
+
+                <li class="wrappers" id=""> <a href="http://hello">Special Stores</a></li>
+                
+                <li class="wrappers" id="first_item"></li>
+               
+        </ul>
+        </section>
+
+        <div class="watch-section" id="allmodel">  <h2 class="rs-cards-shelf-mainheader"> All models. <span class="rs-cards-shelf-secondaryheader">Take your pick.</span></h2></div>
+        <section class="image-scroll-section">
+          
+            <div class="image-scroll-wrapper">
+
+                <div class="wrapper" id="first_item"></div>
+    
+
+           
+
+                <div class="rf-hcard-content" > 
+                    <h3 class="rf-recommcard-content-title"><a href="/"><span data-index="2">Apple Watch Series 9</span></a></h3>
+                   <div class="rf-recommcard-content-img"><a href="#ex1" rel="modal:open">
+                    <img src="../image_file/ipad-card-40-pro-202405.jpeg" alt="" srcset="" class="rf-hcard-img"> </a></div>
+                    <div class="rf-recommcard-content-info">
+                        
+                        
+                            <ul class="rf-recommcard-content-swatchescontainer" aria-label="HomePod mini - YellowAvailable colors" role="list"><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Space Gray" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-aluminum-pink-cell-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692920745317"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Blue" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-aluminum-midnight-cell-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692920745177"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Yellow" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-aluminum-starlight-nc-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692920750905"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="White" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-mini-select-white-202110_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1634037006000"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Orange" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-stainless-gold-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692973854100"></li>
+                                <li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Orange" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-stainless-silver-cell-hermes9s_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1693519699638"></li>
+                                <li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Orange" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-stainless-graphite-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692973992677"></li>
+                                <li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Orange" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-41-stainless-spaceblack-cell-hermes9s_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1693519699442"></li><li class="rf-hcard-content-moretext">+</li>
+                                
+
+                            </ul>
+                            <div class="rf-watch-content-price">
+                            <span>From $399 or $33.25/mo.for 12 mo.*</span>
+                           <button class="apple_button" > buy</button>
+                        </div></div>
+                </div>
+
+                <div class="rf-hcard-content" id=""> 
+                    <h3 class="rf-recommcard-content-title"><a href="/"><span data-index="2">Apple Watch Ultra 2</span></a></h3>
+                   <div class="rf-recommcard-content-img"><a href="#ex1" rel="modal:open">
+                    <img src="../image_file/ipad-card-40-air-202405.jpeg" alt="" srcset="" class="rf-hcard-img" ></a></div>
+                    <div class="rf-recommcard-content-info">
+                            <div class="rf-watch-content-price">
+                            <span>From $799 or $66.58/mo.for 12 mo.*</span>
+                           <button class="apple_button" > buy</button>
+                        </div></div>
+                </div>
+
+
+                <div class="rf-hcard-content" id=""> 
+                    <h3 class="rf-recommcard-content-title"><a href="/"><span data-index="2">Apple Watch SE</span></a></h3>
+                   <div class="rf-recommcard-content-img"><a href="#ex1" rel="modal:open">
+                    <img src="../image_file/ipad-card-40-ipad-202405.jpeg" alt="" srcset="" class="rf-hcard-img" ></a></div>
+                    <div class="rf-recommcard-content-info">
+                        
+                        
+                            <ul class="rf-recommcard-content-swatchescontainer" aria-label="HomePod mini - YellowAvailable colors" role="list"><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Blue" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-aluminum-midnight-cell-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692920745177"></li>
+                                <li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Space Gray" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-aluminum-pink-cell-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692920745317"></li>
+                                <li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Yellow" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-aluminum-starlight-nc-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692920750905"></li>
+                                
+
+                            </ul>
+                            <div class="rf-watch-content-price">
+                            <span>From $249 or $20.75/mo.for 12 mo.*</span>
+                           <button class="apple_button" > buy</button>
+                        </div></div>
+                </div>
+
+                
+                <div class="rf-hcard-content" id=""> 
+                    <h3 class="rf-recommcard-content-title"><a href="/"><span data-index="2">Apple Watch Hermès</span></a></h3>
+                   <div class="rf-recommcard-content-img"><a href="#ex1" rel="modal:open">
+                    <img src="../image_file/ipad-card-40-ipad-mini-202109.jpeg" alt="" srcset="" class="rf-hcard-img" ></a></div>
+                    <div class="rf-recommcard-content-info">
+                        
+                        
+                            <ul class="rf-recommcard-content-swatchescontainer" aria-label="HomePod mini - YellowAvailable colors" role="list"><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Orange" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-stainless-graphite-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692973992677"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Blue" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-case-45-aluminum-midnight-cell-s9_SW_COLOR?wid=32&amp;hei=32&amp;fmt=png-alpha&amp;.v=1692920745177"></li>
+                            </ul>
+                            <div class="rf-watch-content-price">
+                            <span>From $1299 or $104.08/mo.for 12 mo.*</span>
+                           <button class="apple_button" > buy</button>
+                        </div></div>
+                </div>
+
+
+                <div class="rf-hcard-content"> 
+                    <div class="rf-ccard-content-info">
+                        <h3 class="items-whites">APPLE WATCH&nbsp;SE </h3>
+                        <div class="rf-ccard-content-header"><a href="https://www.apple.com/shop/buy-vision/apple-vision-pro" data-index="2"  class="rf-ccard-content-headerlink"><span class="info-header">A great deal to love.  </span></a></div>
+                        <div class="rf-white-desc">
+                            From <span>$249</span>
+                     <span> or $20.75/mo. for 12 </span><span class="visuallyhidden"></span>mo.<sup>†</sup></div>
+                       </div><a href="#ex1" rel="modal:open">
+                    <img src="../image_file/ipad-card-50-all-accessories-202405.jpeg" alt="" srcset="" class="rf-ccard-img-full" width="400" height="500"></a>
+                </div>
+            <div class="wrapper" id="first_item"></div>
+            </div>
+        
+    
+        </section>
+
+
+<!-- section 2  -->
+
+ <!-- section 2  -->
+
+ <!-- section 3 -->
+</section>
+
+
+<div class="watch-section"> <h2 class="rs-cards-shelf-mainheader">Shopping guides. <span class="rs-cards-shelf-secondaryheader">Can’t decide? Start here.</span></h2></div>
+<section class="image-scroll-section">
+    
+  
+    <div class="image-scroll-wrapper">
+
+        <div class="wrapper" id="first_item"></div>
+    
+        <div class="rf-ccard-content"> 
+            <div class="rf-ccard-content-info">
+                <h3 class="items-whites">Quic start Setup</h3>
+                <div class="rf-ccard-content-header"><a href="" data-index="2"  class="rf-ccard-content-headerlink"><span class="info-header">Get even more attached to iPhone.</span></a></div>
+                <div class="rf-white-desc">
+                <span>Automatically set up your new iPad with your current iPadOS or iOS device.</span></div>
+                
+                
+               </div>
+           
+            <img src="../image_file/ipad-card-50-setupguide-202405_GEO_US.jpeg" alt="" srcset="" class="rf-ccard-img-full" width="400" height="500">
+        </div>
+    
+        
+        <div class="rf-ccard-content"> 
+            <div class="rf-ccard-content-info">
+                <h3 class="items-whites">GETTING STARTED</h3>
+                <div class="rf-ccard-content-header"><a href="" data-index="2"  class="rf-ccard-content-headerlink"><span class="info-header"> Learn how to set up your new Apple Watch.</span></a></div>
+               </div>
+           
+            <img src="../image_file/watch-card-50-setup-202403_GEO_US.jpeg" alt="" srcset="" class="rf-ccard-img-full" width="400" height="500">
+        </div>
+    
+   
+        
+  
+        <div class="rf-ccard-content"> 
+            <div class="rf-ccard-content-info">
+                <h3 class="items-whites">COMPARE ALL MODELS</h3>
+                <div class="rf-ccard-content-header"><a href="" data-index="2"  class="rf-ccard-content-headerlink"><span class="info-header"> Which iPhone is right for you?.</span></a></div>
+               </div>
+           
+            <img src="../image_file/iphone-card-50-compare-202309.jpeg" alt="" srcset="" class="rf-ccard-img-full" width="400" height="500">
+        </div>
+        <div class="rf-ccard-content"> 
+            <div class="rf-ccard-content-info">
+                <h3 class="items-whites">APPLE TRADE IN</h3>
+                <div class="rf-ccard-content-header"><a href="" data-index="2"  class="rf-ccard-content-headerlink"><span class="info-header">Get $170–$630 in credit toward iPhone 15 or iPhone 15 Pro when you trade in iPhone 11 or higher.2</span></a></div>
+               </div>
+           
+            <img src="../image_file/iphone-card-50-tradein-202309.jpeg" alt="" srcset="" class="rf-ccard-img-full" width="400" height="500">
+        </div>
+       
+       
+        <div class="rf-ccard-content"> 
+            <div class="rf-ccard-content-info">
+                <h3 class="items-whites">SWITCH TO IPHONE</h3>
+                <div class="rf-ccard-content-header"><a href="" data-index="2"  class="rf-ccard-content-headerlink"><span class="info-header">Switching from Android to iPhone is supersimple.</span></a></div>
+               </div>
+           
+            <img src="../image_file/iphone-card-50-whyswitch-202407_GEO_US.jpeg" alt="" srcset="" class="rf-ccard-img-full" width="400" height="500">
+        </div>
+        <div class="rf-ccard-content"> 
+            <div class="rf-ccard-content-info">
+                <h3 class="items-whites">CARRIER CONNECTIVITY</h3>
+                <div class="rf-ccard-content-header"><a href="" data-index="2"  class="rf-ccard-content-headerlink"><span class="info-header">iPhone and eSIM — a simpler way to connect to your carrier..</span></a></div>
+               </div>
+           
+            <img src="../image_file/iphone-card-50-carrier-202309_GEO_US.jpeg" alt="" srcset="" class="rf-ccard-img-full" width="400" height="500">
+        </div>
+    <div class="wrapper" id="first_item"></div>
+    </div>
+</section>
+
+<!-- section 4 -->
+ 
+
+<div class="watch-section"> <h2 class="rs-cards-shelf-mainheader"> iPad accessories.<span class="rs-cards-shelf-secondaryheader">Work and create with ease.</span></h2></div>
+<section class="image-scroll-section">
+  
+    <div class="image-scroll-wrapper">
+      
+        <div class="wrapper" id="first_item"></div>
+    
+        <div class="rf-ccard-content"> 
+            <div class="rf-ccard-content-info">
+               <h2 class="explore">Explore all apple watch bands.</h2>
+               
+            </div>
+            <a href="#ex1" rel="modal:open">
+            <img src="../image_file/ipad-card-50-engraving-202405.jpeg" alt="" srcset="" class="rf-ccard-img-full" width="400" height="500"></a>
+        </div>
+    
+   
+
+        <div class="rf-recommcard-content" id=""> 
+           
+           <div class="rf-recommcard-content-img">
+            <img src="../image_file/MX2D3.jpeg" alt="" srcset="" class="" width="200" height="200"><ul class="rf-recommcard-content-swatchescontainer" aria-label="HomePod - MidnightAvailable colors" role="list"></ul></div>
+            <div class="rf-recommcard-content-info">
+                
+                <div class="rf-recommcard-content-violator"><span class="badge badge-reduced badge-no-scrim rf-recommcard-content-violatortext">New</span></div> <br><h3 class="rf-recommcard-content-title"><a href="https://www.apple.com/shop/product/MTJV3LL/A/airpods-pro"><span data-index="2">Apple Pencil Pro</span></a></h3><div class="rf-recommcard-content-price"><span>$129.00</span></div></div>
+        </div>
+
+        <div class="rf-recommcard-content" id=""> 
+           
+            <div class="rf-recommcard-content-img">
+             <img src="../image_file/MWR53.jpeg" alt="" srcset="" class="" width="200" height="200"><ul class="rf-recommcard-content-swatchescontainer" aria-label="HomePod - MidnightAvailable colors" role="list"><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Midnight" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-select-midnight-202210_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1669944382727"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="White" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-select-white-202210_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1669944382942"></li></ul></div>
+             
+             <div class="rf-recommcard-content-info">
+                
+                <div class="rf-recommcard-content-violator"><span class="badge badge-reduced badge-no-scrim rf-recommcard-content-violatortext">New</span></div> <br><h3 class="rf-recommcard-content-title"><a href="https://www.apple.com/shop/product/MTJV3LL/A/airpods-pro"><span data-index="2">Magic Keyboard for iPad Pro 13‑inch (M4) - US English - Black</span></a></h3><div class="rf-recommcard-content-price"><span>$349.00</span></div></div>
+            
+         </div>
+
+         <div class="rf-recommcard-content" id=""> 
+           
+            <div class="rf-recommcard-content-img">
+             <img src="../image_file/MQDU3.jpeg" alt="" srcset="" class="" width="200" height="200"><ul class="rf-recommcard-content-swatchescontainer" aria-label="AirPods Max - SilverAvailable colors" role="list"><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Space Gray" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQDU3_SW_COLOR?wid=64&hei=64&fmt=jpeg&qlt=90&.v=1664481877765"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Pink" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-pink-202011_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1603846873000"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Green" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-green-202011_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1603846873000"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Silver" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQDR3_SW_COLOR?wid=64&hei=64&fmt=jpeg&qlt=90&.v=1664481877575"></li></ul>
+             
+            </div>
+            <div class="rf-recommcard-content-info">
+                
+                <div class="rf-recommcard-content-violator"><span class="badge badge-reduced badge-no-scrim rf-recommcard-content-violatortext"></span></div> <br><h3 class="rf-recommcard-content-title"><a href="https://www.apple.com/shop/product/MTJV3LL/A/airpods-pro"><span data-index="2">Smart Folio for iPad (10th generation) - Sky</span></a></h3><div class="rf-recommcard-content-price"><span>$79.00</span></div></div>
+            
+         </div>
+        
+         <div class="rf-recommcard-content" id=""> 
+           
+            <div class="rf-recommcard-content-img">
+             <img src="../image_file/MUWA3.jpeg" alt="" srcset="" class="" width="200" height="200">
+             <ul class="rf-recommcard-content-swatchescontainer" aria-label="Beats Solo 4 — On-Ear Wireless Headphones – Cloud PinkAvailable colors" role="list"><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Matte Black" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MUW23_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1712255582741"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Slate Blue" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MUW43_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1712255582735"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Cloud Pink" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MUW33_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1712255582736"></li></ul>
+            </div>
+             <div class="rf-recommcard-content-info"><div class="rf-recommcard-content-violator"><span class="badge badge-reduced badge-no-scrim rf-recommcard-content-violatortext"></span></div><br><h3 class="rf-recommcard-content-title"><a href="https://www.apple.com/shop/product/MTJV3LL/A/airpods-pro"><span data-index="2">Apple Pencil (USB‑C)</span></a></h3> <div class="rf-recommcard-content-price"><span>$79.00</span></div></div>
+         </div>
+
+         <div class="rf-recommcard-content" id=""> 
+           
+            <div class="rf-recommcard-content-img">
+             <img src="../image_file/MQDP3.jpeg" alt="" srcset="" class="" width="200" height="200">
+             <ul class="rf-recommcard-content-swatchescontainer" aria-label="HomePod mini - YellowAvailable colors" role="list"><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Space Gray" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-mini-select-spacegray-202110_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1634037004000"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Blue" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-mini-select-blue-202110_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1634037003000"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Yellow" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-mini-select-yellow-202110_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1634037005000"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="White" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-mini-select-white-202110_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1634037006000"></li><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="Orange" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-mini-select-orange-202110_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1634037003000"></li></ul></div>
+             <div class="rf-recommcard-content-info"><div class="rf-recommcard-content-violator"><span class="badge badge-reduced badge-no-scrim rf-recommcard-content-violatortext"></span></div> <br><h3 class="rf-recommcard-content-title"><a href="https://www.apple.com/shop/product/MTJV3LL/A/airpods-pro"><span data-index="2">AirPods Pro (2nd&nbsp;generation) with&nbsp;MagSafe Charging Case (USB‑C)</span></a></h3><div class="rf-recommcard-content-price"><span>$249.00</span></div></div>
+         </div>
+
+
+         <div class="rf-recommcard-content" id=""> 
+           
+            <div class="rf-recommcard-content-img">
+             <img src="../image_file/MM6L3.jpeg" alt="" srcset="" class="" width="200" height="200"> <ul class="rf-recommcard-content-swatchescontainer" aria-label="HomePod mini - YellowAvailable colors" role="list"><li class="rf-recommcard-content-colorimage"><img width="32" height="32" alt="White" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-select-white-202210_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1669944382942"></li></ul>
+            </div>
+             <div class="rf-recommcard-content-info"><div class="rf-recommcard-content-violator"><span class="badge badge-reduced badge-no-scrim rf-recommcard-content-violatortext"></span></div><h3 class="rf-recommcard-content-title"><a href="https://www.apple.com/shop/product/MTJV3LL/A/airpods-pro"><span data-index="2">AirPods Pro (2nd&nbsp;generation) with&nbsp;MagSafe Charging Case (USB‑C)</span></a></h3><div class="rf-recommcard-content-price"><span>$249.00</span></div></div>
+         </div>
+
+        
+
+    <div class="wrapper" id="first_item"></div>
+    </div>
+</section>
+
+<!-- section 4 -->
+   
+    </main>
+
+    
+
+    <footer class="global_footer_items">
+  
+        <section>
+            <section>
+                <p class="global_footer">To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
+                <p class="global_footer">◊ Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you select it at checkout in the U.S. for eligible products purchased at Apple Store locations, apple.com, the Apple Store app, or by calling 1‑800‑MY‑APPLE, and is subject to credit approval and credit limit. See support.apple.com/kb/HT211204 for more information about eligible products. APR ranges may vary based on when you accepted an Apple Card. Cardholders who accept an Apple Card on and/or after February 1, 2024: Variable APRs for Apple Card, other than ACMI, range from 19.24% to 29.49% based on creditworthiness. Rates as of February 1, 2024. Existing cardholders: See your Customer Agreement for applicable rates and fee. If you buy an ACMI eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI purchases are subject to the variable APR, not 0% APR. When you buy an iPhone with ACMI, you’ll need to select AT&T, T‑Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to, installment term lengths and eligible products. See support.apple.com/kb/HT211204 for information about upcoming changes to ACMI financing. See the Apple Card Customer Agreement for more information about ACMI financing.</p>
+
+               <p class="global_footer"> 
+                <li class="apple_logo"><a href="http://" target="_blank" rel="noopener noreferrer"><span><svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path></svg></span></a> <span></span></li> 
+               </p>
+            </section>
+            <div class="copy_right">
+                <h5 class="copyright">Copyright © 2024 Apple Inc. All rights reserved. <Span class="canada_txt">Canada</Span> </h5>
+               
+              <ul class="footer_links">
+                <li><a href="">Privacy Policy</a></li>
+                <span class="border_item"> </span>
+                    <li><a href="">Terms of Use </a></li>
+                    <span class="border_item"> </span>
+                    <li> <a href="">Sales and Refunds</a></li>
+                    <span class="border_item"> </span>
+                    <li> <a href="">Legal</a> </li>
+                    <span class="border_item"> </span>
+                    <li> <a href="">Site Map</a></li>
+                </ul>  
+            
+                
+            </div>
+        </section>
+    </footer>
+
+    <!-- modal- wrapper for pop up -->
+    <div id="ex1" class="modal custom-width">
+        
+        <div class="IPHONE_SELECT"> 
+            <div class="selcts-iphone">
+                <button class="iphone-button" id="custom">ipad Pro</button>
+                <button class="iphone-button">ipad Air</button>
+                <button class="iphone-button">ipad</button> 
+                <button class="iphone-button">ipad mini</button>
+                
+            </div>
+        </div>
+        <section class="select_rfciphone">
+         <div class="display_types">
+            <!--  -->
+            <section class="inf_img">
+                <div>
+                
+                
+                <div class="img_content_scroller">
+                    <img src="../image_file/ipadpro11-digitalmat-gallery-1-202404.jpeg" alt="" width="364" height="333">
+                </div>
+            </div>
+            </section>
+            
+            <!-- info -->
+
+            <section class="inf_descrip">
+                <div>
+                <div class="">
+                    <p class="canvas_section">Apple Watch Series 9</p>
+                    <p class="canvas_price"> From $399or $33.25/mo. per monthfor 12 mo.* 
+                            <span> <button class="canvas_icon"> Buy</button> </span>
+                        </p>
+                </div>
+                
+                <div class="details_content">
+                    <div class="section_details"> 
+                        <div><svg class="as-svgicon" width="35" height="35" viewBox="0 0 35 35"><rect width="35" height="35" fill="none"></rect><path d="M28.1487,11.8474a1.1515,1.1515,0,0,0-.8865-.3655H27V11a5,5,0,0,0-5-5H12a5,5,0,0,0-5,5V24a5,5,0,0,0,5,5H22a5,5,0,0,0,5-5V16.5263h.2622a1.1375,1.1375,0,0,0,.8865-.3747,1.4024,1.4024,0,0,0,.3381-.9778V12.8161A1.37,1.37,0,0,0,28.1487,11.8474ZM26,24a4.0045,4.0045,0,0,1-4,4H12a4.0045,4.0045,0,0,1-4-4V11a4.0045,4.0045,0,0,1,4-4H22a4.0045,4.0045,0,0,1,4,4Zm-8.5-6.0259a.5.5,0,0,1-.3174-.1137l-3.5-2.8814a.5.5,0,0,1,.6348-.7725l3.17,2.6089,5.18-4.6235a.5.5,0,0,1,.666.7461l-5.5,4.9092A.5.5,0,0,1,17.5,17.9741Z" fill="#1d1d1f"></path></svg></div>
+                        <p class="typography-mac-tight">Brighter Always-On Retina display with a durable, crack-resistant front crystal</p></div>
+
+                        <!--  -->
+                   
+                        <div class="section_details"> 
+                            <div><svg class="as-svgicon" height="35" viewBox="0 0 35 35" width="35" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h35v35h-35z" fill="none"></path><path d="m27.5686 11.7546a5.629 5.629 0 0 0 -3.84-3.5292 5.9221 5.9221 0 0 0 -1.6225-.2318 5.6632 5.6632 0 0 0 -1.6566.25 5.0948 5.0948 0 0 0 -2.7719 2.0072c-.0909.13-.136.1956-.1814.1956s-.0918-.0665-.1853-.2a5.1689 5.1689 0 0 0 -3.5909-2.1893 5.562 5.562 0 0 0 -.8506-.0653 5.9807 5.9807 0 0 0 -1.917.3244 5.5242 5.5242 0 0 0 -2.6574 1.8887 6.267 6.267 0 0 0 -1.2729 3.4318 8.21 8.21 0 0 0 .7018 3.9055 14.46 14.46 0 0 0 2.7491 4.0716 25.1112 25.1112 0 0 0 3.5539 3.1781c.9043.6682 1.8373 1.2993 2.7674 1.9331a1.2521 1.2521 0 0 0 .6878.2668.786.786 0 0 0 .3025-.0618 2.5485 2.5485 0 0 0 .4627-.2308c.7881-.5353 1.5832-1.0621 2.3518-1.6238a26.1408 26.1408 0 0 0 4.2718-3.8446 14.6026 14.6026 0 0 0 2.1556-3.1441 8.7754 8.7754 0 0 0 .9726-3.8174 6.8614 6.8614 0 0 0 -.4305-2.5147zm-1.4386 5.8888a13.568 13.568 0 0 1 -2.011 2.928 25.0041 25.0041 0 0 1 -4.11 3.6967c-.6011.4392-1.2366.8687-1.8513 1.2841l-.4722.32a1.4068 1.4068 0 0 1 -.2071.1023c-.0268-.0145-.0658-.0379-.1211-.0755l-.2167-.1477c-.8362-.57-1.7008-1.1583-2.5194-1.7633a24.2013 24.2013 0 0 1 -3.4127-3.0514 13.4778 13.4778 0 0 1 -2.5656-3.7881 7.17 7.17 0 0 1 -.6239-3.4348 5.2346 5.2346 0 0 1 1.0669-2.8966 4.4947 4.4947 0 0 1 2.1858-1.5529 5.0013 5.0013 0 0 1 1.5975-.2721 4.6015 4.6015 0 0 1 .6982.0535 4.1669 4.1669 0 0 1 2.9289 1.7815 1.26 1.26 0 0 0 1.0037.6929 1.2455 1.2455 0 0 0 .998-.6981 4.0827 4.0827 0 0 1 2.2429-1.6219 4.6825 4.6825 0 0 1 1.3652-.2064 4.9491 4.9491 0 0 1 1.35.1938 4.6369 4.6369 0 0 1 3.1839 2.9386 5.8784 5.8784 0 0 1 .3592 2.1312 7.7429 7.7429 0 0 1 -.8692 3.3862z"></path></svg></div>
+                            <p class="typography-mac-tight">Get deep insights into your physical and mental health including heart rate, Footnote 1 mood, and more</p></div>
+                        
+
+                            <div class="section_details"> 
+                                <div><svg class="as-svgicon" aria-hidden="true" role="img" height="35" viewBox="0 0 21 35" width="21">
+                                    <path d="m0 0h21v35h-21z" fill="none"></path>
+                                    <path d="m8.2326 19.4934a2.76 2.76 0 0 1 -.6642-.5506 1.71 1.71 0 0 1 -.3807-.807 2.651 2.651 0 0 1 .1081-1.2094l.9314-3.2485a.46.46 0 0 0 -.1081-.5053.6069.6069 0 0 0 -.4716-.1535l-1.6011.1136-.4889 3.3053a1.223 1.223 0 0 1 -.3635.7951.9723.9723 0 0 1 -.7724.2158.9179.9179 0 0 1 -.7033-.3862 1.2067 1.2067 0 0 1 -.1708-.8746l.5343-4.0436a1.3006 1.3006 0 0 1 .3744-.7838 1.2148 1.2148 0 0 1 .7833-.3294l3.9872-.2839a5.527 5.527 0 0 1 2.59.3294 4.4068 4.4068 0 0 1 1.7946 1.4993l1.9655 2.7147 2.8503-1.2608a1.2071 1.2071 0 0 1 .8632-.0968 1.01 1.01 0 0 1 .6025.5511.9587.9587 0 0 1 .0391.8178 1.1818 1.1818 0 0 1 -.6416.602l-3.601 1.6016a1.005 1.005 0 0 1 -.7324.0622 1.0387 1.0387 0 0 1 -.5852-.4257l-1.2486-1.8287a.4908.4908 0 0 0 -.4779-.2385.432.432 0 0 0 -.3744.3521l-.84 2.9418 4.259 2.7942a1.13 1.13 0 0 1 .4543.5566 1.3161 1.3161 0 0 1 .0745.71.95.95 0 0 1 -.3353.5851l-3.9191 3.3394a1.2786 1.2786 0 0 1 -.9251.3635 1.0617 1.0617 0 0 1 -.7442-.3521 1.0133 1.0133 0 0 1 -.25-.7556 1.1854 1.1854 0 0 1 .4771-.8346l2.8051-2.408-4.35-2.4421q-.3642-.2048-.7445-.4319zm-6.855 10.2454a1.1717 1.1717 0 0 0 .7669.2612 1.2731 1.2731 0 0 0 .8805-.42l3.68-3.646a3.1222 3.1222 0 0 0 .3234-.3635 2.7836 2.7836 0 0 0 .2445-.4884l1.5447-3.9982-.3743-.2045a8.0849 8.0849 0 0 1 -1.1077-.71 4.4894 4.4894 0 0 1 -.7669-.7442l-1.3511 4.782-3.8164 3.8051a1.1446 1.1446 0 0 0 -.0236 1.7265zm11.5747-19.7865a2.3848 2.3848 0 0 0 1.244-.3353 2.5506 2.5506 0 0 0 .8969-.8969 2.4854 2.4854 0 0 0 0-2.4934 2.5657 2.5657 0 0 0 -.8969-.8914 2.4854 2.4854 0 0 0 -2.4934 0 2.5718 2.5718 0 0 0 -.8914.8914 2.4854 2.4854 0 0 0 0 2.4934 2.5566 2.5566 0 0 0 .8914.8969 2.374 2.374 0 0 0 1.2494.3353z"></path></svg></div>
+                                <p class="typography-mac-tight">With advanced workout metrics and views</p></div>
+
+                            <div class="section_details"> 
+                                <div><svg class="as-svgicon" height="35" viewBox="0 0 35 35" width="35" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h35v35h-35z" fill="none"></path><path d="m24.5 6h-14c-2.4814 0-4.5 2.0186-4.5 4.5v14c0 2.4814 2.0186 4.5 4.5 4.5h14c2.4814 0 4.5-2.0186 4.5-4.5v-14c0-2.4814-2.0186-4.5-4.5-4.5zm3.5 18.5c0 1.9297-1.5703 3.5-3.5 3.5h-14c-1.9297 0-3.5-1.5703-3.5-3.5v-14c0-1.9297 1.5703-3.5 3.5-3.5h14c1.9297 0 3.5 1.5703 3.5 3.5zm-10.8359-5.999v.0039c0 .9775-.7578 1.5957-1.9883 1.5957-1.1797 0-1.9248-.5635-1.9824-1.4385l-.0039-.0547h.9941l.0039.0342c.0371.3691.4375.6191 1.0156.6191.5498 0 .9297-.2637.9297-.6426v-.0039c0-.3242-.2432-.5059-.8555-.6328l-.5195-.1055c-1.0254-.209-1.4658-.6875-1.4658-1.4355v-.0039c0-.916.7861-1.5205 1.8799-1.5205 1.1523 0 1.8281.6084 1.8936 1.4326l.0029.0439h-.9707l-.0059-.041c-.0586-.3525-.4004-.5986-.9199-.5986-.5098.0039-.8477.2363-.8477.6055v.0039c0 .3203.2393.5117.8203.6318l.5234.1064c1.042.2148 1.4961.6318 1.4961 1.4004zm2.5615-3.5879c-1.1104 0-1.8896.7441-1.8896 1.7529v.0068c0 .9336.6455 1.6172 1.6055 1.6172.6836 0 1.0938-.3418 1.2715-.7217h.0684v.1094c-.0371.8994-.3516 1.5996-1.0664 1.5996-.3965 0-.6758-.208-.7959-.5166l-.0107-.0303h-1.0117l.0078.0303c.1533.7734.8613 1.3369 1.8145 1.3369 1.2646 0 2.0439-.9814 2.0439-2.6318v-.0068c0-1.7334-.8955-2.5459-2.0371-2.5459zm.9023 1.7422c0 .5098-.3936.8721-.9023.8721-.5166 0-.8916-.3721-.8916-.8916v-.0078c0-.502.3994-.8945.8984-.8945.502 0 .8955.3994.8955.916v.0059z"></path></svg></div>
+                                <p class="typography-mac-tight">The all-new S9 SiP powers a magical new way to use your watch without touching the screen</p></div>
+
+                                <div class="section_details"> 
+                                    <div><svg height="35" viewBox="0 0 35 35" width="35" class="as-svgicon" aria-hidden="true" role="img">
+                                        <path d="m0 0h35v35h-35z" fill="none"></path>
+                                        <path d="m17.5 6.1a11.4 11.4 0 1 1 -11.4 11.4 11.4129 11.4129 0 0 1 11.4-11.4m0-1.1a12.5 12.5 0 1 0 12.5 12.5 12.5 12.5 0 0 0 -12.5-12.5zm-6.6841 15.8972a1.8235 1.8235 0 0 1 -.7842-.7368 2.41 2.41 0 0 1 -.2939-1.1357v-.1758h1.2578l.0068.1621a1.1921 1.1921 0 0 0 .2832.8081 1.0128 1.0128 0 0 0 .7647.2739 1.0361 1.0361 0 0 0 .4932-.1118.7816.7816 0 0 0 .3212-.3076.9015.9015 0 0 0 .1114-.4531v-.0132a.9332.9332 0 0 0 -.2158-.6255 1.9065 1.9065 0 0 0 -.7374-.4634l-.5878-.2226a3.169 3.169 0 0 1 -.89-.5142 1.9878 1.9878 0 0 1 -.5234-.6792 2.024 2.024 0 0 1 -.1758-.8555v-.0136a1.9094 1.9094 0 0 1 .2842-1.0308 1.9336 1.9336 0 0 1 .7773-.71 2.4687 2.4687 0 0 1 1.1426-.2534 2.3654 2.3654 0 0 1 1.1289.25 1.76 1.76 0 0 1 .7236.72 2.287 2.287 0 0 1 .2637 1.085v.2436h-1.2162l-.0068-.1962a1.1629 1.1629 0 0 0 -.2442-.7676.8124.8124 0 0 0 -.6484-.2735.9646.9646 0 0 0 -.4766.1079.7953.7953 0 0 0 -.3047.3008.8975.8975 0 0 0 -.1113.4566v.0143a.9685.9685 0 0 0 .0947.44 1.0049 1.0049 0 0 0 .2969.3447 2.1385 2.1385 0 0 0 .5479.2837l.5947.23a3.6388 3.6388 0 0 1 .92.5137 1.8035 1.8035 0 0 1 .5205.6528 2.038 2.038 0 0 1 .169.855v.0068a2.009 2.009 0 0 1 -.2842 1.0718 1.923 1.923 0 0 1 -.7871.72 2.5794 2.5794 0 0 1 -1.1865.2569 2.7057 2.7057 0 0 1 -1.228-.2582zm5.2862-.1518a2.5132 2.5132 0 0 1 -.8516-1.23 6.1011 6.1011 0 0 1 -.2881-2.0181v-.0136a5.91 5.91 0 0 1 .2949-2.0015 2.5437 2.5437 0 0 1 .8584-1.2271 2.2344 2.2344 0 0 1 1.3623-.4155 2.26 2.26 0 0 1 1.376.4155 2.5563 2.5563 0 0 1 .8584 1.2271 5.9119 5.9119 0 0 1 .2939 2.0015v.0136a6.0434 6.0434 0 0 1 -.291 2.0181 2.5385 2.5385 0 0 1 -.8515 1.23 2.5022 2.5022 0 0 1 -2.7617 0zm2.0449-1.0074a1.7767 1.7767 0 0 0 .4023-.8383 6.2044 6.2044 0 0 0 .1319-1.3965v-.0132a6.07 6.07 0 0 0 -.1348-1.396 1.8291 1.8291 0 0 0 -.4024-.8384.8834.8834 0 0 0 -.666-.2807.866.866 0 0 0 -.6523.2807 1.8414 1.8414 0 0 0 -.4063.8384 5.9377 5.9377 0 0 0 -.1386 1.396v.0132a5.7728 5.7728 0 0 0 .1425 1.3968 1.8945 1.8945 0 0 0 .4053.8383.8565.8565 0 0 0 .6494.28.8911.8911 0 0 0 .669-.2803zm3.63 1.1592a1.8224 1.8224 0 0 1 -.7842-.7368 2.41 2.41 0 0 1 -.294-1.1357v-.1758h1.2578l.0069.1621a1.1916 1.1916 0 0 0 .2832.8081 1.0125 1.0125 0 0 0 .7646.2739 1.0359 1.0359 0 0 0 .4932-.1118.7819.7819 0 0 0 .3213-.3076.9025.9025 0 0 0 .1113-.4531v-.0132a.9332.9332 0 0 0 -.2158-.6255 1.9053 1.9053 0 0 0 -.7373-.4634l-.5879-.2226a3.1718 3.1718 0 0 1 -.89-.5142 1.9878 1.9878 0 0 1 -.5234-.6792 2.024 2.024 0 0 1 -.1758-.8555v-.0136a1.91 1.91 0 0 1 .2842-1.0308 1.9346 1.9346 0 0 1 .7774-.71 2.4683 2.4683 0 0 1 1.1425-.2534 2.3654 2.3654 0 0 1 1.1289.25 1.7607 1.7607 0 0 1 .7237.72 2.2858 2.2858 0 0 1 .2636 1.085v.2436h-1.2166l-.0068-.1962a1.1628 1.1628 0 0 0 -.2441-.7676.8127.8127 0 0 0 -.6485-.2735.9642.9642 0 0 0 -.4765.1079.7946.7946 0 0 0 -.3047.3008.8975.8975 0 0 0 -.1113.4566v.0143a.9672.9672 0 0 0 .0947.44 1.0038 1.0038 0 0 0 .2969.3447 2.136 2.136 0 0 0 .5478.2837l.5947.23a3.64 3.64 0 0 1 .92.5137 1.8045 1.8045 0 0 1 .52.6528 2.038 2.038 0 0 1 .1689.855v.0068a2.0081 2.0081 0 0 1 -.2842 1.0718 1.9218 1.9218 0 0 1 -.7871.72 2.5788 2.5788 0 0 1 -1.1865.2569 2.7056 2.7056 0 0 1 -1.227-.2582z"></path>
+                                        </svg></div>
+                                    <p class="typography-mac-tight">Innovative safety features including Emergency SOS,  footnote  2 Fall Detection, and Crash Detection</p></div>
+
+                    
+                </div>
+            </div>
+            </section>
+            
+         </div>
+           
+         
+
+            <footer class="rfc_footer_buyiphone" >
+                <div class="rfc_footerinfo"> 
+                  <div class="as-svgicon-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 56" class="as-svgicon as-svgicon-financing as-svgicon-elevated as-svgicon-financingelevated" aria-hidden="true" role="img">
+                        
+                              <path d="M37,12H5a5.006,5.006,0,0,0-5,5V39a5.006,5.006,0,0,0,5,5H37a5.006,5.006,0,0,0,5-5V17A5.006,5.006,0,0,0,37,12ZM5,14H37a3,3,0,0,1,3,3v3H2V17A3,3,0,0,1,5,14ZM37,42H5a3,3,0,0,1-3-3V24H40V39A3,3,0,0,1,37,42ZM6,33.5v-4A1.5,1.5,0,0,1,7.5,28h6A1.5,1.5,0,0,1,15,29.5v4A1.5,1.5,0,0,1,13.5,35h-6A1.5,1.5,0,0,1,6,33.5Z" fill="#6cca4e"></path>
+                          
+                      </svg>
+                  </div>
+                  <p class="rfc_footer_text">
+                      Apple Card Monthly Installments
+   <span class="rfc_footertext_span"> Pay over time, interest-free when you choose to check out with Apple Card Monthly Installments.§</span>
+                  </p>
+              </div>
+  
+      <!--  -->
+      <div class="rfc_footerinfo"> 
+          <div class="as-svgicon-container">
+              <svg viewBox="0 0 43 56" xmlns="http://www.w3.org/2000/svg" class="as-svgicon as-svgicon-financing as-svgicon-elevated as-svgicon-financingelevated" aria-hidden="true" role="img"><path d="m0 0h43v56h-43z" fill="none"></path><path d="m38.5 27a.99974.99974 0 0 0 -1 1v11a5.00588 5.00588 0 0 1 -5 5h-22a5.00588 5.00588 0 0 1 -5-5v-3.83594l1.543 1.543a.99989.99989 0 1 0 1.414-1.41406l-3.25-3.25a.99962.99962 0 0 0 -1.41406 0l-3.25 3.25a.99989.99989 0 1 0 1.41406 1.414l1.543-1.543v3.836a7.00818 7.00818 0 0 0 7 7h22a7.00818 7.00818 0 0 0 7-7v-11a.99974.99974 0 0 0 -1-1z" fill="#ab45fb"></path><path d="m28.17188 32.71533a.31074.31074 0 0 0 -.35157.35156q0 .334.35157.334h2.62792a.29915.29915 0 0 0 .34278-.334.30692.30692 0 0 0 -.34278-.35156z" fill="#ab45fb"></path><path d="m30.60156 21.32031a1.92007 1.92007 0 0 0 -1.40136-.47021h-15.75a1.94085 1.94085 0 0 0 -1.376.47021 1.81128 1.81128 0 0 0 -.50488 1.39307v10.43262h-.92481a.95033.95033 0 0 0 -.70312.29443 1.00858 1.00858 0 0 0 0 1.41553.9536.9536 0 0 0 .70312.29394h20.74416a1.96828 1.96828 0 0 0 1.415-.51855 1.78331 1.78331 0 0 0 .54492-1.35352v-8.376a1.78328 1.78328 0 0 0 -.54492-1.35352 1.96828 1.96828 0 0 0 -1.415-.51855h-.30762v-.31641a1.8689 1.8689 0 0 0 -.47949-1.39304zm-4.99609 3.58155v8.24414h-12.62109v-10.03711a.74576.74576 0 0 1 .84374-.84375h14.99415a.85949.85949 0 0 1 .63281.21093.827.827 0 0 1 .19971.55372h-2.08936a1.96828 1.96828 0 0 0 -1.415.51855 1.78328 1.78328 0 0 0 -.54496 1.35352zm5.53711-.334v-.35156h.09668a.94481.94481 0 0 1 .67676.23291.83527.83527 0 0 1 .24609.63721v8.00683a.83528.83528 0 0 1 -.24609.63721.94481.94481 0 0 1 -.67676.23291h-3.51563a.95761.95761 0 0 1 -.68554-.23291.83525.83525 0 0 1 -.2461-.63721v-8.00682a.83524.83524 0 0 1 .2461-.63721.95761.95761 0 0 1 .68554-.23291h.09668v.35156a.52959.52959 0 0 0 .14063.37793.48342.48342 0 0 0 .36914.14941h2.30273a.48342.48342 0 0 0 .36914-.14941.52959.52959 0 0 0 .14063-.37793z" fill="#ab45fb"></path><path d="m42.457 19.293a.99962.99962 0 0 0 -1.41406 0l-1.543 1.543v-3.836a7.00818 7.00818 0 0 0 -7-7h-22a7.00818 7.00818 0 0 0 -7 7v11a1 1 0 0 0 2 0v-11a5.00588 5.00588 0 0 1 5-5h22a5.00588 5.00588 0 0 1 5 5v3.83594l-1.543-1.543a.99989.99989 0 0 0 -1.41394 1.41406l3.25 3.25a.99963.99963 0 0 0 1.41406 0l3.25-3.25a.99962.99962 0 0 0 -.00006-1.414z" fill="#ab45fb"></path></svg>
+          </div>
+          <p class=" rfc_footer_text">
+              Trade in for credit
+   <span class="rfc_footertext_span">
+      Get credit toward your purchase when you trade in an eligible iPhone.◊◊</span>
+          </p>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div class="rfc_footerinfo"> 
+          <div class="as-svgicon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 56" class="as-svgicon as-svgicon-financing as-svgicon-elevated as-svgicon-financingelevated" aria-hidden="true" role="img">
+                
+                      <path d="M37,12H5a5.006,5.006,0,0,0-5,5V39a5.006,5.006,0,0,0,5,5H37a5.006,5.006,0,0,0,5-5V17A5.006,5.006,0,0,0,37,12ZM5,14H37a3,3,0,0,1,3,3v3H2V17A3,3,0,0,1,5,14ZM37,42H5a3,3,0,0,1-3-3V24H40V39A3,3,0,0,1,37,42ZM6,33.5v-4A1.5,1.5,0,0,1,7.5,28h6A1.5,1.5,0,0,1,15,29.5v4A1.5,1.5,0,0,1,13.5,35h-6A1.5,1.5,0,0,1,6,33.5Z" fill="#6cca4e"></path>
+                  
+              </svg>
+          </div>
+          <p class=" rfc_footer_text">
+              Get a sweet carrier deal at Apple
+     <span class="rfc_footertext_span"> 
+      Save even more on your new iPhone when you finance with select carrier deals.†</span>
+          </p>
+      </div>
+              </footer>
+        
+        </section>
+        <div>  <p class="rc-overlay-footer">* Available to qualified customers and requires 24-month installment loan when you select Citizens One or Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple. You’ll need to select AT&T, T-Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time. Subject to credit approval and credit limit. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. Additional Apple Card Monthly Installments terms are in the Apple Card Customer Agreement(Opens in a new window). Additional iPhone Payments terms are here(Opens in a new window). ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to, installment term lengths and eligible products. See https://support.apple.com/kb/HT211204(Opens in a new window) for information about upcoming changes to ACMI financing.
+        </p> 
+<p class="rc-overlay-footer">
+1. The display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches (iPhone 14, iPhone 13), 6.12 inches (iPhone 15, iPhone 15 Pro), 6.68 inches (iPhone 14 Plus) or 6.69 inches (iPhone 15 Plus, iPhone 15 Pro Max) diagonally. Actual viewable area is less. <br>
+2. USB 3 cable with 10Gb/s speed required.
+</p>
+
+
+<p class="rc-overlay-footer">§ Apple Card Monthly Installments (ACMI) is a 0% APR (Annual Percentage Rate) payment option that is only available if you select it at checkout in the U.S. for eligible products purchased at Apple Store locations, apple.com(Opens in a new window), the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See Apple Support(Opens in a new window) for more information about eligible products. APR ranges may vary based on when you accepted an Apple Card. Cardholders who accept an Apple Card on and/or after February 1, 2024: Variable APRs for Apple Card, other than ACMI, range from 19.24% to 29.49% based on creditworthiness. Rates as of February 1, 2024. Existing cardholders: See your Customer Agreement for applicable rates and fee. If you buy an ACMI-eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI purchases are subject to the variable APR, not 0% APR. When you buy an iPhone with ACMI, you’ll need to select AT&T, T-Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to, installment term lengths and eligible products. See Apple Support(Opens in a new window) for information about upcoming changes to ACMI financing. See the Apple Card Customer Agreement(Opens in a new window) for more information about ACMI financing.</p>
+<p class="rc-overlay-footer">To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.</p>
+
+<p class="rc-overlay-footer"> ◊◊ Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In‑store trade‑in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade‑in. Some stores may have additional requirements. Apple or its trade‑in partners reserve the right to refuse, cancel, or limit quantity of any trade‑in transaction for any reason. More details are available from Apple’s trade‑in partner for trade‑in and recycling of eligible devices. Restrictions and limitations may apply.</p>
+
+
+<p class="rc-overlay-footer">† AT&T iPhone 15 Special Deal: Monthly price reflects net monthly payment, after application of AT&T trade-in credit applied over 36 months with purchase of an iPhone 15 Pro, iPhone 15 Pro Max, iPhone 15, or iPhone 15 Plus and trade-in of eligible smartphone. Receive credit with purchase of an iPhone 15 Pro or iPhone 15 Pro Max of either $1000, $700, or $350 (based upon the model and condition of your trade-in smartphone). Receive credit with purchase of an iPhone 15 or iPhone 15 Plus of either $700 or $350 (based upon the model and condition of your trade-in smartphone). Max bill credits will not exceed the cost of the device. Requires upgrade of an existing line or activation of a new line and purchase of a new iPhone 15 Pro, iPhone 15 Pro Max, iPhone 15, or iPhone 15 Plus on qualifying 36 month 0% APR installment plan, subject to carrier credit qualification. AT&T Installment Plan with Next Up is not eligible for this promotion. $0 down for well qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. Requires activation on eligible unlimited plan. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $35. Trade in device may not be on existing installment plan. Bill credits are applied as a monthly credit over the 36 month installment plan. Credits start within 3 bills. Will receive catchup credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited time offer; subject to change. Limits: one trade-in per qualifying purchase and one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Price for iPhone 15 and iPhone 15 Plus includes $30 AT&T connectivity discount. Activation required.</p>
+
+
+</div>
+       
+    </div>
+
+    <!--  -->
+    <script src="../js/next.js"></script>
+    <script>
+        setPageTitle("Ipad content")
+    </script>
+    <script src="https://kit.fontawesome.com/891c2fc307.js" crossorigin="anonymous"></script>
+</body>
+</html>
