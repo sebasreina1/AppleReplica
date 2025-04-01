@@ -1,4 +1,5 @@
-Apple Website Replica - School Project
+#Apple Website Replica - School Project
+
 📌 Project Overview
 This is a fully responsive Apple.com replica built as a school project, mimicking the official Apple website's design, layout, and key functionalities (including a product showcase, shopping cart, and checkout flow).
 
